@@ -1,0 +1,33 @@
+body {
+color: #333333;
+}
+
+p {
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* リンク */
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
+/*パンくずリスト*/
+.topicPath {
+  font-size: 11px;
+  background-color: #eee;
+}
+
+.topicPath img {
+  vertical-align: bottom;
+}
