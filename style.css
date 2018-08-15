@@ -143,4 +143,27 @@ a:hover {
 /*サブカラム*/
 #pageBodySub {
   width: 250px;
+  background-color: #f5f5f5;
+}
+
+#pageBodySub .localNavi ul {
+  padding: 0;
+}
+
+#pageBodySub .localNavi ul li {
+  padding: 8px 5px 8px 35px;
+  font-size: 13px;
+}
+
+#pageBodySub .localNavi ul li.listTextTop {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 25px;
+  border-bottom: dotted 1px gray;
+}
+
+#pageBodySub .localNavi ul li.listTextMiddle {
+  padding: 8px 5px 8px 25px;
+  font-size: 16px;
+  font-weight: bold;
 }
