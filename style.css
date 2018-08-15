@@ -27,24 +27,37 @@ a:hover {
 
 /* ページ */
 #page {
+  width: 100%;
   margin: 0 auto;
 }
 
 /* ヘッダー */
 #pageHead  {
   height: 115px;
-  width: auto;
-  padding: 15px 0 0;
+  width: 100%;
   background-color: #fff;
   border-top: 4px solid #0055a9;
 }
 
+#pageHead:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 #pageHead #siteTitle {
   float: left;
+  font-size: 13px;
+}
+
+#pageHead #siteTitle a img {
+  border: 1px solid #FF0000;
+  padding-top: 7.5em;
 }
 
 #pageHead #pageHeadLight {
   float: right;
+  border: 1px solid #FF0000;
 }
 
 #pageHead .globalNavi {
@@ -72,6 +85,7 @@ a:hover {
 .topicPath {
   font-size: 11px;
   background-color: #eee;
+  margin-left: 0 auto;
   margin-bottom: 26px;
   padding: 13px 0;
 }
@@ -84,4 +98,49 @@ a:hover {
 .topicPath a {
   padding-right: 10px;
   padding-left: 8px;
+}
+
+
+/* ページボディー */
+#pageBody .pageBodyDetail {
+  margin: 0 2%;
+}
+
+#pageBodyMain .pageBodyTop {
+  width: 700px;
+  margin-bottom: 1.5em;
+}
+
+#pageBodyMain .pageBodyTop h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#pageBodyMain .pageBodyTop {
+  font-size: 18px;
+}
+
+
+
+/*メインカラム*/
+
+#pageBodyMain table {
+  font-size: 14px;
+  line-height: 1.429;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#pageBodyMain table tr,
+#pageBodyMain table th {
+  padding: 20px 10px;
+}
+
+#pageBodyMain table tr {
+  border-bottom: 1px solid gray;
+}
+
+/*サブカラム*/
+#pageBodySub {
+  width: 250px;
 }
