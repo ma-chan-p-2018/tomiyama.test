@@ -151,8 +151,11 @@ a:hover {
   border-bottom: 1px solid #eeeeee;
 }
 
+#pageBodyMain .pageBodyTable table tr th {
+  width: 120px;
+}
 
-#pageBodyMain .pageBodyTable table td a {
+#pageBodyMain .pageBodyTable table tr td a {
   display: block;
   margin-top: 10px;
 }
@@ -162,7 +165,7 @@ a:hover {
   padding: 20px 10px;
 }
 
-/*サブカラム*/
+/*サブカラム上*/
 #pageBodySub {
   width: 250px;
   float: right;
@@ -201,14 +204,24 @@ a:hover {
   background-color: rgb(221, 243, 254);
 }
 
+/*サブカラム下*/
 #pageBodySub .sectionList {
   background-color: #fff;
   border: 1px solid #eeeeee;
-  padding: 20px;
   margin-bottom: 1.2em;
-  display: block; 
 }
 
-#pageBodySub .sectionList a:hover:first-child {
+#pageBodySub .sectionList .imgCenter {
+  text-align: center;
+}
+
+#pageBodySub .sectionList .sectionListTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#pageBodySub .sectionList a {
+  display: block;
   text-decoration: none;
+  padding: 20px;
 }
