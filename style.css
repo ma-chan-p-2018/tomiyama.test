@@ -1,10 +1,8 @@
 body {
 color: #333333;
 line-height: 1.4;
-}
-
-p {
-  font-size: 13px;
+font-size: 13px;
+text-align: left;
 }
 
 ul {
@@ -47,7 +45,6 @@ a:hover {
 
 #pageHead #siteTitle {
   float: left;
-  font-size: 13px;
 }
 
 #pageHead #siteTitle a img {
@@ -60,6 +57,8 @@ a:hover {
   border: 1px solid #FF0000;
 }
 
+/*グローバルナビ*/
+
 #pageHead .globalNavi {
     height: 51px;
     width: auto;
@@ -67,12 +66,12 @@ a:hover {
 
 #pageHead .globalNavi ul li {
   float: left;
-  padding: 16px 8px;
+  padding: 16px 15px 15px 15px;
 }
 
 #pageHead .globalNavi ul li a {
-  font-size: 14.04px;
   font-weight: bold;
+  font-size: 116%;
 }
 
 #pageHead .globalNavi ul li a:hover {
@@ -103,56 +102,85 @@ a:hover {
 
 /* ページボディー */
 #pageBody .pageBodyDetail {
+  width: 980px;
   margin: 0 2%;
 }
 
-#pageBodyMain .pageBodyTop {
+#pageBodyMain .pageBodyHead {
   width: 700px;
-  margin-bottom: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
 
-#pageBodyMain .pageBodyTop h2 {
+#pageBodyMain .pageBodyHead h2 {
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
-#pageBodyMain .pageBodyTop {
+#pageBodyMain .pageBodyHead p {
+  margin: 0;
   font-size: 18px;
 }
 
-
+#pageBody .pageBodyDetail:after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 /*メインカラム*/
+#pageBodyMain {
 
-#pageBodyMain table {
-  font-size: 14px;
-  line-height: 1.429;
+}
+
+#pageBodyMain .pageBodyTable {
+  border-top: 3px solid #0055a9;
+  padding-top: 30px;
+  float: left;
+  width: 700px;
+}
+
+#pageBodyMain .pageBodyTable table {
   border-collapse: collapse;
   width: 100%;
 }
 
-#pageBodyMain table tr,
-#pageBodyMain table th {
-  padding: 20px 10px;
+#pageBodyMain .pageBodyTable table tr {
+  border-bottom: 1px solid #eeeeee;
 }
 
-#pageBodyMain table tr {
-  border-bottom: 1px solid gray;
+
+#pageBodyMain .pageBodyTable table td a {
+  display: block;
+  margin-top: 10px;
+}
+
+#pageBodyMain .pageBodyTable table tr th,
+#pageBodyMain .pageBodyTable table tr td {
+  padding: 20px 10px;
 }
 
 /*サブカラム*/
 #pageBodySub {
   width: 250px;
+  float: right;
+}
+
+#pageBodySub .localNavi {
   background-color: #f5f5f5;
+  padding-bottom: 10px;
+  margin-bottom: 1.2em;
 }
 
 #pageBodySub .localNavi ul {
   padding: 0;
+  margin: 0;
 }
 
 #pageBodySub .localNavi ul li {
   padding: 8px 5px 8px 35px;
-  font-size: 13px;
 }
 
 #pageBodySub .localNavi ul li.listTextTop {
@@ -166,4 +194,21 @@ a:hover {
   padding: 8px 5px 8px 25px;
   font-size: 16px;
   font-weight: bold;
+}
+
+#pageBodySub .localNavi ul li:nth-child(3),
+#pageBodySub .localNavi ul li:nth-child(4) {
+  background-color: rgb(221, 243, 254);
+}
+
+#pageBodySub .sectionList {
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  margin-bottom: 1.2em;
+  display: block; 
+}
+
+#pageBodySub .sectionList a:hover:first-child {
+  text-decoration: none;
 }
