@@ -228,18 +228,133 @@ a:hover {
 
 
 /*フッターメニュー*/
-#menu .menuTop {
-  content: "";
-  clear: both;
-  display: block;
+
+/*---仮色---*/
+/*---------*/
+.menuDetail {
+  background-color: #eaeaea;
+}
+
+#menu {
+  margin: 0 auto;
+  width: 980px;
+  list-style: none;
+  padding: 40px;
+}
+
+#menu ul,
+#manu ul li {
+  padding: 0;
+  margin: 0 auto;
+}
+
+/*----------あとで消す　#menu .menuTop {
+  padding-top: 40px;
+  height: 391px;
 }
 
 #menu .menuBottom {
+  height: 315px;
+}            ------------*/
+
+#menu .menuTitle {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+#menu .menuBlock {
+  margin-right: 50px;
+  padding-bottom: 40px;
+}
+
+#menu .menuTop .menuBlock {
+  height: 391px;
+}
+
+#menu .menuBottom .menuBlock {
+  height: 315px;
+}
+
+#menu .menuBlock.last {
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+
+#menu .menuBlock span {
+  padding-bottom: 5px;
+  font-size: 13px;
+  color: #777777;
+}
+
+#menu .menuText li {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 0.2em;
+}
+
+ #menu .menuTop .menuBlock .menuText.m-btm20 {
+   margin-bottom: 20px;
+ }
+
+#menu .menuTop .menuBlock.topLeft {
+  width: 280px;
+}
+
+#menu .menuTop .menuBlock.topLeft .menuLeft {
+  margin-right: 20px;
+  width: 44%;
+}
+
+#menu .menuTop .menuBlock.topLeft .menuRight {
+  width: 44%;
+}
+
+#menu .menuTop:after,
+#menu .menuBottom:after,
+#menu .menuTop .menuBlock:after {
   content: "";
   clear: both;
   display: block;
 }
 
-#menu .menuBlock {
+#menu .menuTop .menuBlock,
+#menu .menuBottom .menuBlock,
+#menu .menuTop .menuLeft {
   float: left;
+}
+
+#menu .menuTop .menuRight {
+  float: right;
+}
+/*sns*/
+#sns:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#sns ul li {
+  float: left;
+}
+
+/*フッター*/
+#pageFoot {
+  color: #777777;
+}
+
+#pageFoot:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageFoot ul li {
+  float: left;
+}
+
+#pageFoot #copyright {
+  clear: both;
 }
