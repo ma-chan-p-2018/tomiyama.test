@@ -225,3 +225,21 @@ a:hover {
   text-decoration: none;
   padding: 20px;
 }
+
+
+/*フッターメニュー*/
+#menu .menuTop {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#menu .menuBottom {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#menu .menuBlock {
+  float: left;
+}
