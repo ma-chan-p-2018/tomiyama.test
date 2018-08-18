@@ -2,7 +2,7 @@ body {
 color: #333333;
 line-height: 1.4;
 font-size: 13px;
-text-align: left;
+text-align: center;
 }
 
 ul {
@@ -31,6 +31,7 @@ a:hover {
 
 /* ヘッダー */
 #pageHead  {
+  text-align: left;
   height: 115px;
   width: 100%;
   background-color: #fff;
@@ -64,6 +65,12 @@ a:hover {
     width: auto;
 }
 
+#pageHead .glovalNavi ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 #pageHead .globalNavi ul li {
   float: left;
   padding: 16px 15px 15px 15px;
@@ -82,11 +89,17 @@ a:hover {
 
 /*パンくずリスト*/
 .topicPath {
-  font-size: 11px;
+  text-align: left;
   background-color: #eee;
-  margin-left: 0 auto;
+  margin: 0;
   margin-bottom: 26px;
   padding: 13px 0;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.topicPath p {
+  width: 980px;
 }
 
 .topicPath img {
@@ -101,6 +114,10 @@ a:hover {
 
 
 /* ページボディー */
+#pageBody {
+  text-align: left;
+}
+
 #pageBody .pageBodyDetail {
   width: 980px;
   margin: 0 2%;
@@ -228,14 +245,12 @@ a:hover {
 
 
 /*フッターメニュー*/
-
-/*---仮色---*/
-/*---------*/
 .menuDetail {
   background-color: #eaeaea;
 }
 
 #menu {
+  text-align: left;
   margin: 0 auto;
   width: 980px;
   list-style: none;
@@ -247,15 +262,6 @@ a:hover {
   padding: 0;
   margin: 0 auto;
 }
-
-/*----------あとで消す　#menu .menuTop {
-  padding-top: 40px;
-  height: 391px;
-}
-
-#menu .menuBottom {
-  height: 315px;
-}            ------------*/
 
 #menu .menuTitle {
   font-weight: bold;
@@ -330,6 +336,10 @@ a:hover {
   float: right;
 }
 /*sns*/
+#sns {
+  text-align: left;
+}
+
 #sns:after {
   content: "";
   clear: both;
@@ -342,19 +352,38 @@ a:hover {
 
 /*フッター*/
 #pageFoot {
-  color: #777777;
+  text-align: left;
+  color: #606060;
+  width: 980px;
+  margin: 0 auto;
 }
 
-#pageFoot:after {
+#pageFoot ul:after {
   content: "";
   clear: both;
   display: block;
 }
 
+#pageFoot ul {
+  padding: 13px 0;
+  margin: 0;
+}
+
 #pageFoot ul li {
   float: left;
+  margin-bottom: 0.5em;
+}
+
+#pageFoot ul li a {
+  padding: 0 0.5em;
 }
 
 #pageFoot #copyright {
+  margin: 0;
+  padding: 0.5em 0 2em 0;
   clear: both;
+}
+
+#pageFoot small {
+  font-size: 13px;
 }
