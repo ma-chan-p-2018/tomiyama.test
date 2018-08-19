@@ -11,6 +11,10 @@
   <script src="js/bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
   <link rel="stylesheet"  href="js/bxslider-4-4.2.12/src/css/jquery.bxslider.css">
 
+  <!-- 検索フォーム -->
+  <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+  <!-- 検索フォーム -->
+
   <script type="text/javascript">
    // ページの読み込みが完了してから実行
    $(function() {
@@ -68,8 +72,12 @@
           <p>？言語選択？</p>
         </div>
         <div class="searchBox">
-          <p><a href="https://www.nri.com/jp/site/sitemap.html">サイトマップ</a>
-          ？検索？</p>
+            <a href="https://www.nri.com/jp/site/sitemap.html">サイトマップ</a>
+
+            <form id="form2" action="自分のサイトURL" method="get">
+              <input id="sbox2" name="s" type="text" placeholder=""/>
+              <button type="submit" id="sbtn2"><i class="fas fa-search"></i></button>
+            </form>
         </div>
       </section>
 
@@ -90,7 +98,7 @@
     </header>
 
     <div class="topicPathDetail">
-      <p class="topicPath"><img src="icon_home.png" alt="" width="20" height="15"><a href="https://www.nri.com/jp/">ホーム</a>&gt;<a href="https://www.nri.com/jp/company/">企業情報</a>&gt;<a href="">会社概要</a></p>
+      <p class="topicPath"><img src="icon_home.png" alt="" width="20" height="15"><a  href="https://www.nri.com/jp/">ホーム</a>&gt;<a href="https://www.nri.com/jp/company/">企業情報</a>&gt;<a href="">会社概要</a></p>
     </div>
 
     <div id="pageBody">

@@ -4,6 +4,8 @@ color: #333333;
 line-height: 1.4;
 font-size: 13px;
 text-align: center;
+margin: 0;
+padding: 0;
 }
 
 ul {
@@ -64,12 +66,68 @@ a:hover {
   display: block;
 }
 
+/* 検索フォーム */
+.searchBox {
+  position: absolute;
+  top: 5px;
+}
+
+.searchBox a {
+  padding: 36px 13px 0 0;
+}
+
+.searchBox:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#form2{
+/* position:absolute;
+ right: 0;
+ top: 1.4em;*/
+ margin: 1em 0 1em 2em;
+ float: right;
+
+}
+
+#sbox2{
+ height: auto;
+ padding: 0;
+
+ width:200px!important;
+ border-radius:2px;
+ border:solid 3px #eaeaea;
+ outline: 0;
+}
+#sbtn2{
+ height: auto;
+ background:none;
+ color:#666;
+ border:none;
+ outline: 0;
+}
+#sbtn5:hover{
+color:#7fbfff;
+}
+
 /*グローバルナビ*/
 
 #pageHead .globalNavi {
     height: 51px;
     width: auto;
     text-align: left;
+
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 72px;
+    left: 0;
+}
+
+#pageHead .globalNavi ul {
+  margin: 0;
 }
 
 #pageHead .glovalNavi ul:after {
@@ -163,13 +221,19 @@ a:hover {
 
 .topicPath img {
   vertical-align: bottom;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .topicPath a {
-  padding-right: 10px;
-  padding-left: 8px;
   line-height: 1.2;
+  margin-left: 8px;
+  padding-right: 10px;
+}
+
+.topicPath a:first-of-type {
+/*  padding-right: 10px;*/
+
+
 }
 
 
