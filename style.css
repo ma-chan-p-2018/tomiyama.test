@@ -93,6 +93,56 @@ a:hover {
   text-decoration: none;
 }
 
+/*--- 上部固定グローバルナビ  ---*/
+#page #globalNaviScroll {
+   /* ▼上端に固定するCSS */
+   position: fixed;
+   top: 0px;
+   left: 0px;
+  /*------------------*/
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#page #globalNaviScroll .scrollDetail {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#page #globalNaviScroll .scrollDetail:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#page #globalNaviScroll img {
+  display: block;
+  float: left;
+  padding-top: 4px;
+}
+
+#page #globalNaviScroll ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#page #globalNaviScroll ul li {
+  float: left;
+  padding: 16px 15px 15px 15px;
+}
+
+#page #globalNaviScroll ul li a {
+  font-weight: bold;
+  font-size: 116%;
+}
+
+#page #globalNaviScroll ul li a:hover {
+  color: #0055a9;
+  text-decoration: none;
+}
 
 /*パンくずリスト*/
 .topicPathDetail {
@@ -126,11 +176,12 @@ a:hover {
 /* ページボディー */
 #pageBody {
   text-align: left;
+
 }
 
 #pageBody .pageBodyDetail {
   width: 980px;
-  margin: 0 2%;
+  margin: 0 auto;
 }
 
 #pageBodyMain .pageBodyHead {
@@ -175,7 +226,7 @@ a:hover {
 }
 
 #pageBodyMain .pageBodyTable table tr {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 #pageBodyMain .pageBodyTable table tr th {
@@ -397,7 +448,6 @@ a:hover {
 #pageFoot #copyright {
   margin: 0;
   padding: 0.5em 0 2em 0;
-  clear: both;
 }
 
 #pageFoot small {

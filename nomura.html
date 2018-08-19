@@ -6,9 +6,59 @@
 
   <link rel="stylesheet" href="../www/common/css/normalize.css">
   <link rel="stylesheet" href="style.css">
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+  <link rel="stylesheet"  href="js/bxslider-4-4.2.12/src/css/jquery.bxslider.css">
+
+  <script type="text/javascript">
+   // ページの読み込みが完了してから実行
+   $(function() {
+      // スクロール途中から表示したいメニューバーを指定
+      var navBox = $("#globalNaviScroll");
+
+      // メニューバーは初期状態では消しておく
+      navBox.hide();
+
+      // 表示を開始するスクロール量を設定(px)
+      var TargetPos = 72;
+
+      // スクロールされた際に実行
+      $(window).scroll( function() {
+         // 現在のスクロール位置を取得
+         var ScrollPos = $(window).scrollTop();
+         // 現在のスクロール位置と、目的のスクロール位置を比較
+         if( ScrollPos > TargetPos ) {
+            // 表示(フェイドイン)
+            navBox.fadeIn();
+         }
+         else {
+            // 非表示(フェイドアウト)
+            navBox.fadeOut();
+         }
+      });
+   });
+</script>
 </head>
 <body>
   <div id="page">
+
+    <nav id="globalNaviScroll">
+      <div class="scrollDetail">
+        <img src="glovalNavi_logo.png" alt="" width="74" height="41">
+        <ul>
+          <li><a href="#">企業情報</a></li>
+          <li><a href="#">事業・サービス</a></li>
+          <li><a href="#">NRIオピニオン</a></li>
+          <li><a href="#">NRIジャーナル</a></li>
+          <li><a href="#">ニュース</a></li>
+          <li><a href="#">サステナビリティ</a></li>
+          <li><a href="#">IR情報</a></li>
+          <li><a href="#">採用情報</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <header id="pageHead">
       <h1　id="siteTitle"><a href="https://www.nri.com/jp/"><img src="nomura.title.png" alt="" width="277" height="62"></a>
       </h1>
@@ -22,6 +72,8 @@
           ？検索？</p>
         </div>
       </section>
+
+
 
       <nav class="globalNavi">
         <ul>
@@ -289,13 +341,13 @@
 
             <div class="menuBlock">
               <p class="menuTitle last">イベント &raquo;</p>
-                <ul class="menuText">
-                  <li>NRI未来創発フォーラム &raquo;</li>
-                  <li>NRI学生小論文コンテスト &raquo;</li>
-                  <li>NRIメディアフォーラム &raquo;</li>
-                  <li>その他イベント &raquo;</li>
-                </ul>
-
+              <ul class="menuText">
+                <li>NRI未来創発フォーラム &raquo;</li>
+                <li>NRI学生小論文コンテスト &raquo;</li>
+                <li>NRIメディアフォーラム &raquo;</li>
+                <li>その他イベント &raquo;</li>
+              </ul>
+            </div>
           </section><!-- /.menuBottom -->
 
           <section id="sns">
