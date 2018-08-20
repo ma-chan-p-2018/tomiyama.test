@@ -57,10 +57,22 @@ a:hover {
   padding-top: 7.5em;
 }
 
-#pageHead #pageHeadLight {
+#pageHead #pageHeadRight {
   float: right;
   border: 1px solid #FF0000;
 }
+
+#pageHead #pageHeadRight:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageHeadRight p {
+  padding: 36px 13px 0 0;
+  float: left;
+}
+
 
 #siteTitle img{
   display: block;
@@ -70,10 +82,10 @@ a:hover {
 .searchBox {
   position: absolute;
   top: 5px;
-}
+  margin: 0;
+  padding: 0;
 
-.searchBox a {
-  padding: 36px 13px 0 0;
+  float: left;
 }
 
 .searchBox:after {
@@ -83,28 +95,39 @@ a:hover {
 }
 
 #form2{
-/* position:absolute;
+ position:absolute;
+ top: 20px;
  right: 0;
- top: 1.4em;*/
  margin: 1em 0 1em 2em;
- float: right;
 
-}
-
-#sbox2{
+ max-width: 210px;
+ min-width: 200px;
  height: auto;
- padding: 0;
 
- width:200px!important;
- border-radius:2px;
- border:solid 3px #eaeaea;
+ border: 1px solid #cecece;
+}
+#sbox2{
+
+ padding: 0 10px;
+ position: absolute;
+ left: 0;
+ top: 0;
+ width:300px!important;
  outline: 0;
+
+ background-color: #e7e7e7;
+ border-top: 1px solid #dedede;
+ border-left: 2px solid #dedede;
 }
 #sbtn2{
- height: auto;
+ height: 50px;
+ position: absolute;
+ left:250px;
+ top: 0;
  background:none;
  color:#666;
  border:none;
+ font-size:20px;
  outline: 0;
 }
 #sbtn5:hover{
@@ -123,11 +146,12 @@ color:#7fbfff;
 
     position: absolute;
     top: 72px;
-    left: 0;
 }
 
 #pageHead .globalNavi ul {
   margin: 0;
+  position: relative;
+  top: 2px;
 }
 
 #pageHead .glovalNavi ul:after {
@@ -324,26 +348,82 @@ color:#7fbfff;
   margin: 0;
 }
 
-#pageBodySub .localNavi ul li {
+#pageBodySub .localNavi ul li a {
   padding: 8px 5px 8px 35px;
+  display: block;
+  background-image: url(icon_small_2.png);
+  background-repeat: no-repeat;
 }
 
-#pageBodySub .localNavi ul li.listTextTop {
+#pageBodySub .localNavi ul li:nth-child(4) a,
+#pageBodySub .localNavi ul li:nth-child(6) a {
+  background-position: 95px 45%;
+}
+
+#pageBodySub .localNavi ul li:nth-child(5) a{
+  background-position: 69px 45%;
+}
+
+#pageBodySub .localNavi ul li:nth-child(7) a {
+  background-position: 82px 45%;
+}
+
+#pageBodySub .localNavi ul li:nth-child(8) a {
+  background-position: 115px 45%;
+}
+
+#pageBodySub .localNavi ul li:nth-child(9) a {
+  background-position: 165px 45%;
+}
+
+#pageBodySub .localNavi ul li:nth-child(10) a {
+  background-position: 183px 45%;
+}
+
+#pageBodySub .localNavi ul li:nth-child(11) a {
+  background-position: 133px 45%;
+}
+
+
+#pageBodySub .localNavi ul .listTextTop a {
   font-size: 16px;
   font-weight: bold;
   padding: 20px 25px;
   border-bottom: dotted 1px gray;
+  display: block;
+
+  background-image: url(icon_small.png);
+  background-repeat: no-repeat;
+  background-position: 95px 48%;
 }
 
-#pageBodySub .localNavi ul li.listTextMiddle {
+#pageBodySub .localNavi ul .listTextMiddle a {
   padding: 8px 5px 8px 25px;
   font-size: 16px;
   font-weight: bold;
+  display: block;
+
+  background-image: url(icon_small.png);
+  background-repeat: no-repeat;
+  background-position: 95px 48%;
+}
+
+#pageBodySub .localNavi ul li:nth-last-child(2) a {
+  background-position: 52px 75%;
 }
 
 #pageBodySub .localNavi ul li:nth-child(3),
 #pageBodySub .localNavi ul li:nth-child(4) {
   background-color: rgb(221, 243, 254);
+}
+
+#pageBodySub .localNavi ul li:hover {
+  background-color: rgb(221, 243, 254);
+  text-decoration: underline;
+}
+
+#pageBodySub .localNavi .listTextTop:hover {
+  background-color: #f5f5f5;
 }
 
 /*サブカラム下*/
@@ -369,8 +449,33 @@ color:#7fbfff;
 }
 
 
+/* トップに戻る */
+#pageTop {
+  margin: 0 auto;
+  padding: 0;
+  width: 980px;
+
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageTop a {
+  margin: 0;
+  padding: 10px 17px;
+  background-color: #eaeaea;
+  line-height: 0;
+
+  float: right;
+}
+
+#pageTop a img {
+  vertical-align: bottom;
+}
+
 /*フッターメニュー*/
 .menuDetail {
+  clear: both;
   background-color: #eaeaea;
 }
 

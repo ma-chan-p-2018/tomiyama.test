@@ -13,8 +13,9 @@
 
   <!-- 検索フォーム -->
   <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
-  <!-- 検索フォーム -->
+  <!--            -->
 
+  <!-- globalNaviScroll  -->
   <script type="text/javascript">
    // ページの読み込みが完了してから実行
    $(function() {
@@ -43,6 +44,8 @@
       });
    });
 </script>
+<!--               -->
+
 </head>
 <body>
   <div id="page">
@@ -67,17 +70,17 @@
       <h1　id="siteTitle"><a href="https://www.nri.com/jp/"><img src="nomura.title.png" alt="" width="277" height="62"></a>
       </h1>
 
-      <section id="pageHeadLight">
-        <div class="selectLang">
-          <p>？言語選択？</p>
-        </div>
+      <section id="pageHeadRight">
+        <p><a href="https://www.nri.com/jp/site/sitemap.html">サイトマップ</a></p>
         <div class="searchBox">
-            <a href="https://www.nri.com/jp/site/sitemap.html">サイトマップ</a>
+          <div class="selectLang">
+            <p>？言語選択？</p>
+          </div>
 
-            <form id="form2" action="自分のサイトURL" method="get">
-              <input id="sbox2" name="s" type="text" placeholder=""/>
-              <button type="submit" id="sbtn2"><i class="fas fa-search"></i></button>
-            </form>
+          <form id="form2" action="自分のサイトURL" method="get">
+            <input id="sbox2" name="s" type="text" placeholder=""/>
+            <button type="submit" id="sbtn2"><i class="fas fa-search"></i></button>
+          </form>
         </div>
       </section>
 
@@ -176,14 +179,13 @@
         <div id="pageBodySub">
           <nav class="localNavi">
             <ul>
-              <li class="listTextTop"><a href="#">企業情報</a>&raquo;</li>
-              <li class="listTextMiddle"><a href="#">経営方針</a>&raquo;</li>
-              <li class="listTextMiddle"><a href="#">企業案内</a>
+              <li class="listTextTop"><a href="#">企業情報</a></li>
+              <li class="listTextMiddle"><a href="#">経営方針</a></li>
+              <li class="listTextMiddle"><a href="#"><span>企業案内</span></a>
 
               <li><a href="#">会社概要</a></li>
               <li><a href="
-              #"></a>沿革</a></li>
-              <li><a href="#">役員構成</a></li>
+              #">沿革</a></li>
               <li><a href="#">役員構成</a></li>
               <li><a href="#">組織図</a></li>
               <li><a href="#">NRIグループ</a></li>
@@ -199,6 +201,8 @@
           <section class="sectionList">
             <a href="">
               <p class="sectionListTitle">企業案内ムービー</p>
+
+              <img src="nomura_movie.png" alt="" width="200" height="110">
 
               <p class="sectionListText">野村総合研究所を動画でご紹介します。<img src="icon_win-02.png" width="12" height="10" alt=""></p>
             </a>
@@ -216,7 +220,9 @@
         </div><!-- /#pageBodySub -->
       </div><!-- /.pageBodyDetail -->
 
-      <p class="pagetop"><a href="#page"><img src=""></a></p>
+      <div id="pageTop">
+        <a href="#page"><img src="nomura_top.png" alt="" width="40" height="15"></a>
+      </div>
 
       <div class="menuDetail">
         <nav id="menu">
@@ -225,7 +231,7 @@
               <p class="menuTitle">企業情報 &raquo;</p>
               <div class="menuLeft">
                 <ul>
-                  <li class="menuTitle"><span>経営方針</span>
+                  <li class="menuTitle"><span>経営方針 &raquo;</span>
                     <ul class="menuText">
                       <li>社長メッセージ &raquo;</li>
                       <li>企業理念 &raquo;</li>
