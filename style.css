@@ -248,18 +248,22 @@ color:#7fbfff;
   padding-left: 10px;
 }
 
-.topicPath a {
+.topicPath span {
   line-height: 1.2;
   margin-left: 8px;
   padding-right: 10px;
 }
 
-.topicPath a:first-of-type {
-/*  padding-right: 10px;*/
-
-
+.topicPath a {
+  line-height: 1.2;
+  margin-left: 8px;
+  padding-right: 10px;
+  color: #0172ba;
 }
 
+.topicPath a:visited {
+  color: #4d4197;
+}
 
 /* ページボディー */
 #pageBody {
@@ -324,6 +328,11 @@ color:#7fbfff;
 #pageBodyMain .pageBodyTable table tr td a {
   display: block;
   margin-top: 10px;
+  color: #0c419a;
+}
+
+#pageBodyMain .pageBodyTable table tr td a:visited {
+  color: #9e6cb1;
 }
 
 #pageBodyMain .pageBodyTable table tr th,
@@ -433,21 +442,46 @@ color:#7fbfff;
   margin-bottom: 1.2em;
 }
 
-#pageBodySub .sectionList .imgCenter {
-  text-align: center;
+#pageBodySub .sectionList p img {
+  padding: 0;
+  margin: 0 0.35em;
 }
 
-#pageBodySub .sectionList .sectionListTitle {
-  font-size: 16px;
-  font-weight: bold;
+#pageBodySub .sectionList .imgCenter {
+  text-align: center;
 }
 
 #pageBodySub .sectionList a {
   display: block;
   text-decoration: none;
   padding: 20px;
+  color: #0c419a;
 }
 
+#pageBodySub .sectionList a:visited {
+  color: #9e6cb1;
+}
+
+#pageBodySub .sectionListText:hover {
+  text-decoration: underline;
+}
+
+#pageBodySub .sectionList .sectionListTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+
+
+
+/* あとで消す
+#pageBodySub .sectionList .sectionListText a {
+  color: #0c419a;
+}
+
+#pageBodySub .sectionList .sectionListText a:visited {
+  color: #9e6cb1;
+} */
 
 /* トップに戻る */
 #pageTop {
@@ -487,6 +521,11 @@ color:#7fbfff;
   padding: 40px;
 }
 
+#menu img {
+  margin: 0 0.35em;
+  padding: 0;
+}
+
 #menu ul,
 #manu ul li {
   padding: 0;
@@ -498,6 +537,10 @@ color:#7fbfff;
   font-size: 16px;
   padding-bottom: 10px;
   margin: 0;
+}
+
+#menu .menuTitle.news {
+  color: #777;
 }
 
 #menu .menuBlock {
