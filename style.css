@@ -39,7 +39,10 @@ a:hover {
   height: 115px;
   width: 980px;
   margin: 0 auto;
+  padding: 0;
   padding-top: 15px;
+
+  position: relative;
 }
 
 #pageHead:after {
@@ -53,23 +56,37 @@ a:hover {
 }
 
 #pageHead #siteTitle a img {
-  border: 1px solid #FF0000;
   padding-top: 7.5em;
 }
 
-#pageHead #pageHeadRight {
+#pageHeadRight {
   float: right;
-  border: 1px solid #FF0000;
+  margin: 0 auto;
+  padding: 0;
+  width: 300px;
+
+  position: absolute;
+  top: 5px;
+  right: 0;
+  margin: 1em 0 1em 2em;
+  padding: 0;
 }
 
-#pageHead #pageHeadRight:after {
+
+#pageHeadRight:after {
   content: "";
   clear: both;
   display: block;
 }
 
 #pageHeadRight p {
+  padding: 0;
+  margin: 0;
+}
+
+#pageHeadRight .pageHeadRightP {
   padding: 36px 13px 0 0;
+  margin: 0;
   float: left;
 }
 
@@ -80,59 +97,46 @@ a:hover {
 
 /* 検索フォーム */
 .searchBox {
-  position: absolute;
-  top: 5px;
-  margin: 0;
-  padding: 0;
-
-  float: left;
+  float: right;
 }
 
-.searchBox:after {
-  content: "";
-  clear: both;
-  display: block;
+#form02{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 0;
+    margin: 1em 0 1em 2em;
+
+    background-color: #e7e7e7;
+    border-top: 1px solid #dedede;
+    border-left: 2px solid #dedede;
+    width:200px;
+    height: auto;
+
+}
+#form02 input{
+    vertical-align: top;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
 }
 
-#form2{
- position:absolute;
- top: 20px;
- right: 0;
- margin: 1em 0 1em 2em;
-
- max-width: 210px;
- min-width: 200px;
- height: auto;
-
- border: 1px solid #cecece;
+#input02{
+    border: none;
+    width: 80%;
+    padding-left: 10px;
 }
-#sbox2{
+#submit02{
+    width: 30px;
+    border: none;
+    background-image: url(icon_form.png);
+    background-position: center;
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+}
 
- padding: 0 10px;
- position: absolute;
- left: 0;
- top: 0;
- width:300px!important;
- outline: 0;
-
- background-color: #e7e7e7;
- border-top: 1px solid #dedede;
- border-left: 2px solid #dedede;
-}
-#sbtn2{
- height: 50px;
- position: absolute;
- left:250px;
- top: 0;
- background:none;
- color:#666;
- border:none;
- font-size:20px;
- outline: 0;
-}
-#sbtn5:hover{
-color:#7fbfff;
-}
+/*言語選択*/
 
 /*グローバルナビ*/
 
@@ -150,6 +154,7 @@ color:#7fbfff;
 
 #pageHead .globalNavi ul {
   margin: 0;
+  padding: 0;
   position: relative;
   top: 2px;
 }

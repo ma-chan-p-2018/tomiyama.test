@@ -71,16 +71,27 @@
       </h1>
 
       <section id="pageHeadRight">
-        <p><a href="https://www.nri.com/jp/site/sitemap.html">サイトマップ</a></p>
+        <p class="pageHeadRightP"><a href="https://www.nri.com/jp/site/sitemap.html">サイトマップ</a></p>
         <div class="searchBox">
-          <div class="selectLang">
-            <p>？言語選択？</p>
-          </div>
 
-          <form id="form2" action="自分のサイトURL" method="get">
-            <input id="sbox2" name="s" type="text" placeholder=""/>
-            <button type="submit" id="sbtn2"><i class="fas fa-search"></i></button>
+            <form class="selectLang" action="index.html" method="post">
+              <p>Japan
+                <select name="selectLangages" onchange="location.href=value;">
+                  <option value="selectLangages">Area/Langage</option>
+                  <option value="https://www.nri.com/jp/">Japanese</option>
+                  <option value="https://www.nri.com/global/">English</option>
+                  <option value="https://www.nri.com/cn/">Chinese</option>
+                </select>
+              </p>
+            </form>
+
+          <div>
+          <form id="form02" action="nomura.html">
+            <input id="input02" type="text" placeholder=""><!--
+        /input間で改行したい場合はコメントアウト必須/
+          --><input id="submit02" type="submit" value="">
           </form>
+        </div>
         </div>
       </section>
 
