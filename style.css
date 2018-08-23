@@ -171,6 +171,11 @@ a:hover {
   padding: 16px 15px 15px 15px;
 }
 
+#pageHead .globalNavi ul li:first-child,
+#globalNaviScroll ul li:first-child {
+  color: rgb(0, 91, 172);
+}
+
 #pageHead .globalNavi ul li a {
   font-weight: bold;
   font-size: 116%;
@@ -240,7 +245,6 @@ a:hover {
   margin-bottom: 26px;
   padding: 13px 0;
   font-size: 11px;
-  clear: both;
 }
 
 .topicPathDetail .topicPath  {
@@ -279,7 +283,7 @@ a:hover {
 
 #pageBody .pageBodyDetail {
   width: 980px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 #pageBodyMain .pageBodyHead {
@@ -363,6 +367,10 @@ a:hover {
   margin: 0;
 }
 
+#pageBodySub .localNavi ul div {
+  padding-top: 10px;
+}
+
 #pageBodySub .localNavi ul li a {
   padding: 8px 5px 8px 35px;
   display: block;
@@ -395,11 +403,6 @@ a:hover {
   background-position: 183px 45%;
 }
 
-#pageBodySub .localNavi ul li:nth-child(11) a {
-  background-position: 133px 45%;
-}
-
-
 #pageBodySub .localNavi ul .listTextTop a {
   font-size: 16px;
   font-weight: bold;
@@ -427,6 +430,10 @@ a:hover {
   background-position: 52px 75%;
 }
 
+#pageBodySub .localNavi ul li:nth-child(11) a {
+  background-position: 133px 45%;
+}
+
 #pageBodySub .localNavi ul li:nth-child(3),
 #pageBodySub .localNavi ul li:nth-child(4) {
   background-color: rgb(221, 243, 254);
@@ -446,6 +453,10 @@ a:hover {
   background-color: #fff;
   border: 1px solid #eeeeee;
   margin-bottom: 1.2em;
+}
+
+#pageBodySub .sectionList p {
+  margin: 10px 0 0 0;
 }
 
 #pageBodySub .sectionList p img {
@@ -476,18 +487,8 @@ a:hover {
   font-size: 16px;
   font-weight: bold;
   color: #333333;
+  margin: 0 0 16px 0;
 }
-
-
-
-/* あとで消す
-#pageBodySub .sectionList .sectionListText a {
-  color: #0c419a;
-}
-
-#pageBodySub .sectionList .sectionListText a:visited {
-  color: #9e6cb1;
-} */
 
 /* トップに戻る */
 #pageTop {
@@ -515,7 +516,9 @@ a:hover {
 
 /*フッターメニュー*/
 .menuDetail {
+  content: "";
   clear: both;
+  display: block;
   background-color: #eaeaea;
 }
 
